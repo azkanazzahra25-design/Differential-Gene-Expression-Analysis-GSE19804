@@ -1,30 +1,50 @@
-# Differential-Gene-Expression-Analysis-GSE19804
-# Differential Gene Expression Analysis – GSE19804
+# Differential Gene Expression Analysis of Lung Cancer Dataset (GSE19804)
 
-## Deskripsi
-Repository ini berisi analisis Differential Gene Expression menggunakan dataset GSE19804 dari GEO untuk mempelajari perubahan ekspresi gen pada kanker paru.
+## Project Overview
 
-## Struktur Repository
+Project ini bertujuan untuk mengidentifikasi gen yang mengalami perubahan ekspresi signifikan antara jaringan paru-paru normal dan kanker paru-paru menggunakan analisis transcriptomics.
 
-data/
-Dataset yang digunakan dalam analisis.
+Dataset yang digunakan berasal dari Gene Expression Omnibus (GEO) dengan ID **GSE19804**.
 
-scripts/
-Script R untuk melakukan analisis ekspresi gen.
+## Repository Structure
 
-outputs/
-Hasil analisis dan visualisasi (volcano plot dan heatmap).
+```
+data/        : Dataset yang digunakan dalam analisis
+scripts/     : Script R untuk analisis differential expression
+outputs/     : Hasil analisis (visualisasi dan tabel DEG)
+README.md    : Dokumentasi proyek
+laporan_singkat.md : Laporan singkat analisis
+```
 
-laporan_singkat.md
-Laporan singkat mengenai analisis yang dilakukan.
+## Methods
 
-## Metode
-Analisis dilakukan menggunakan bahasa R dengan paket limma untuk mengidentifikasi gen dengan ekspresi berbeda secara signifikan.
+Analisis dilakukan menggunakan bahasa pemrograman **R** dengan paket:
 
-## Visualisasi
+* GEOquery
+* limma
+* EnhancedVolcano
+* pheatmap
 
-### Volcano Plot
-![Volcano Plot](outputs/volcano_plot.png)
+Langkah analisis:
 
-### Heatmap
-![Heatmap](outputs/heatmap_top50.png)
+1. Mengunduh dataset dari GEO
+2. Normalisasi dan preprocessing data
+3. Differential expression analysis menggunakan limma
+4. Visualisasi hasil menggunakan volcano plot
+5. Visualisasi pola ekspresi menggunakan heatmap
+
+## Results
+
+Analisis menghasilkan sejumlah gen yang menunjukkan perubahan ekspresi signifikan antara kondisi normal dan kanker paru-paru.
+
+Visualisasi hasil meliputi:
+
+* Volcano plot untuk melihat distribusi gen signifikan
+* Heatmap untuk melihat pola ekspresi gen utama
+
+Hasil lengkap analisis tersedia pada file:
+**outputs/DEG_results_GSE19804.csv**
+
+## Azka Nabilah Azzahra
+
+Project ini dibuat sebagai bagian dari tugas capstone program bioinformatics.
