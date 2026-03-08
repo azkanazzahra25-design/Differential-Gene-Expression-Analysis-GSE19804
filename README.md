@@ -44,6 +44,7 @@ Visualisasi hasil meliputi:
 
 Hasil lengkap analisis tersedia pada file:
 https://github.com/azkanazzahra25-design/Differential-Gene-Expression-Analysis-GSE19804/tree/main/outputs 
+Video presentasi dapat diakses pada: https://drive.google.com/file/d/1uT1pzO6fIhTzWLp_WHEcTQIO79MKch48/view?usp=sharing
 
 ## Azka Nabilah Azzahra
 
