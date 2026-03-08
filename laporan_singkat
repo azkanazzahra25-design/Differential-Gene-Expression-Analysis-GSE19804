@@ -1,0 +1,44 @@
+1. Pendahuluan
+Kanker paru merupakan salah satu penyebab utama kematian akibat kanker di dunia. Penyakit ini sering kali terdiagnosis pada tahap lanjut sehingga menurunkan tingkat keberhasilan terapi. Oleh karena itu, pemahaman terhadap mekanisme molekuler yang mendasari perkembangan kanker paru sangat penting untuk menemukan biomarker diagnostik maupun target terapi baru.
+Salah satu pendekatan yang dapat digunakan adalah analisis ekspresi gen diferensial (Differential Gene Expression Analysis). Analisis ini bertujuan untuk mengidentifikasi gen-gen yang memiliki tingkat ekspresi berbeda secara signifikan antara kondisi normal dan kondisi penyakit.
+Dalam studi ini digunakan dataset GSE19804 dari Gene Expression Omnibus (GEO), yang berisi data ekspresi gen dari sampel jaringan paru normal dan jaringan kanker paru. Analisis dilakukan untuk mengidentifikasi gen yang mengalami upregulation maupun downregulation pada kondisi kanker.
+
+2. Metode
+Dataset
+Dataset yang digunakan adalah GSE19804, yang diperoleh dari database Gene Expression Omnibus (GEO). Dataset ini berisi data ekspresi gen dari jaringan paru normal dan jaringan kanker paru yang dianalisis menggunakan teknologi microarray.
+Data diunduh dalam bentuk series matrix dan kemudian diproses menggunakan perangkat lunak R.
+
+Tahapan Analisis
+Tahapan analisis yang dilakukan meliputi:
+1.	Pengunduhan dan pemuatan dataset
+Dataset dimuat ke dalam lingkungan R untuk dilakukan analisis lebih lanjut.
+2.	Pra-pemrosesan data
+Data diperiksa untuk memastikan format dan struktur sesuai untuk analisis ekspresi gen.
+3.	Analisis Differential Gene Expression
+Analisis dilakukan menggunakan paket limma untuk mengidentifikasi gen dengan perubahan ekspresi signifikan antara sampel normal dan kanker.
+4.	Visualisasi hasil analisis
+Hasil analisis divisualisasikan menggunakan:
+o	Volcano Plot untuk melihat distribusi gen berdasarkan fold change dan p-value.
+o	Heatmap untuk menampilkan pola ekspresi gen yang paling signifikan.
+
+3. Hasil dan Interpretasi
+Hasil analisis menunjukkan adanya sejumlah gen yang mengalami perubahan ekspresi secara signifikan antara jaringan normal dan jaringan kanker paru.
+Volcano Plot
+Volcano plot menunjukkan distribusi gen berdasarkan nilai log2 fold change dan p-value.
+Gen dengan nilai fold change tinggi dan p-value rendah dianggap sebagai gen yang mengalami perubahan ekspresi signifikan.
+•	Gen dengan warna merah menunjukkan gen yang mengalami upregulation pada kanker paru.
+•	Gen dengan warna biru menunjukkan gen yang mengalami downregulation.
+Visualisasi ini membantu mengidentifikasi gen-gen kandidat yang berpotensi berperan dalam perkembangan kanker paru.
+
+Heatmap
+Heatmap digunakan untuk menampilkan pola ekspresi gen pada sampel yang berbeda.
+Gen-gen dengan perubahan ekspresi paling signifikan ditampilkan dalam heatmap sehingga dapat terlihat perbedaan pola ekspresi antara:
+•	sampel normal
+•	sampel kanker
+Cluster pada heatmap menunjukkan bahwa sampel kanker memiliki pola ekspresi gen yang berbeda secara jelas dibandingkan dengan sampel normal.
+Hal ini menunjukkan bahwa perubahan ekspresi gen berperan penting dalam mekanisme molekuler kanker paru.
+
+4. Kesimpulan
+Analisis differential gene expression pada dataset GSE19804 berhasil mengidentifikasi sejumlah gen yang mengalami perubahan ekspresi signifikan antara jaringan paru normal dan jaringan kanker paru.
+Visualisasi menggunakan volcano plot dan heatmap menunjukkan adanya perbedaan pola ekspresi gen yang jelas antara kedua kondisi tersebut.
+Hasil analisis ini dapat memberikan wawasan awal mengenai gen-gen yang berpotensi terlibat dalam perkembangan kanker paru dan dapat menjadi dasar untuk penelitian lebih lanjut dalam pengembangan biomarker maupun target terapi.
