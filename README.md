@@ -43,7 +43,7 @@ Visualisasi hasil meliputi:
 * Heatmap untuk melihat pola ekspresi gen utama
 
 Hasil lengkap analisis tersedia pada file:
-**outputs/DEG_results_GSE19804.csv**
+https://github.com/azkanazzahra25-design/Differential-Gene-Expression-Analysis-GSE19804/tree/main/outputs 
 
 ## Azka Nabilah Azzahra
 
